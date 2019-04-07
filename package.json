@@ -1,7 +1,7 @@
 {
-  "name": "thewinningteamalmog.github.io",
+  "name": "insta-feedback",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://thewinningteamalmog.github.io/InstaFeedback/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
