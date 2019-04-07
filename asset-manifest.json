@@ -1,17 +1,17 @@
 {
   "main.css": "/InstaFeedback/static/css/main.6a73607c.chunk.css",
-  "main.js": "/InstaFeedback/static/js/main.fe542580.chunk.js",
-  "main.js.map": "/InstaFeedback/static/js/main.fe542580.chunk.js.map",
+  "main.js": "/InstaFeedback/static/js/main.9d1b40bb.chunk.js",
+  "main.js.map": "/InstaFeedback/static/js/main.9d1b40bb.chunk.js.map",
   "runtime~main.js": "/InstaFeedback/static/js/runtime~main.f5e25b4c.js",
   "runtime~main.js.map": "/InstaFeedback/static/js/runtime~main.f5e25b4c.js.map",
   "static/css/2.8919fe2b.chunk.css": "/InstaFeedback/static/css/2.8919fe2b.chunk.css",
-  "static/js/2.887802e7.chunk.js": "/InstaFeedback/static/js/2.887802e7.chunk.js",
-  "static/js/2.887802e7.chunk.js.map": "/InstaFeedback/static/js/2.887802e7.chunk.js.map",
+  "static/js/2.4da92eb5.chunk.js": "/InstaFeedback/static/js/2.4da92eb5.chunk.js",
+  "static/js/2.4da92eb5.chunk.js.map": "/InstaFeedback/static/js/2.4da92eb5.chunk.js.map",
   "index.html": "/InstaFeedback/index.html",
-  "precache-manifest.e56a952e088273e7739c9c078b20f623.js": "/InstaFeedback/precache-manifest.e56a952e088273e7739c9c078b20f623.js",
+  "precache-manifest.c9049da45ddb5a7efa511b71531aa387.js": "/InstaFeedback/precache-manifest.c9049da45ddb5a7efa511b71531aa387.js",
   "service-worker.js": "/InstaFeedback/service-worker.js",
   "static/css/2.8919fe2b.chunk.css.map": "/InstaFeedback/static/css/2.8919fe2b.chunk.css.map",
   "static/css/main.6a73607c.chunk.css.map": "/InstaFeedback/static/css/main.6a73607c.chunk.css.map",
   "static/media/semantic.min.css": "/InstaFeedback/static/media/outline-icons.ef60a4f6.woff",
-  "static/media/instagram-logo-balck-white.png": "/InstaFeedback/static/media/instagram-logo-balck-white.7ea7582b.png"
+  "static/media/instagram-logo-white.png": "/InstaFeedback/static/media/instagram-logo-white.9cbd1bc7.png"
 }
