@@ -28,10 +28,10 @@ class App extends Component {
     const imagesRegexMatch = pageHtml.match(/"https:\/\/.+?\.jpg\?.+?"/g);
 
     if (Array.isArray(imagesRegexMatch) && imagesRegexMatch.length > 0) {
-      const profilePic = imagesRegexMatch[0];
-
+      const profilePicString = imagesRegexMatch[0];
+      const profilePic = profilePicString.slice(1, profilePicString.length - 1);
       this.setState({
-        mainImage: profilePic.slice(1, profilePic.length - 1)
+        mainImage: profilePic
       });
     }
 
@@ -56,7 +56,7 @@ class App extends Component {
             }}
           />
           <h1>InstaFeedback</h1>
-          <Form>
+          <Form autocomplete="off">
             <Form.Input
               style={{ width: "300px" }}
               id="input-username"
