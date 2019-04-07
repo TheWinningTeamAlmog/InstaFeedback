@@ -16,6 +16,7 @@ class App extends Component {
     this.setState({ isLoading: true });
 
     const username = document.getElementById("input-username").value;
+
     const resp = await fetch(`https://www.instagram.com/${username}/`);
 
     if (!resp.ok || username.trim() === "") {
@@ -30,6 +31,12 @@ class App extends Component {
     if (Array.isArray(imagesRegexMatch) && imagesRegexMatch.length > 0) {
       const profilePicString = imagesRegexMatch[0];
       const profilePic = profilePicString.slice(1, profilePicString.length - 1);
+
+      const usernameAgain = document.getElementById("input-username").value;
+      if (username !== usernameAgain) {
+        return;
+      }
+
       this.setState({
         mainImage: profilePic
       });
@@ -56,7 +63,7 @@ class App extends Component {
             }}
           />
           <h1>InstaFeedback</h1>
-          <Form autocomplete="off">
+          <Form autoComplete="off">
             <Form.Input
               style={{ width: "300px" }}
               id="input-username"
