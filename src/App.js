@@ -1,8 +1,36 @@
 import React, { Component } from "react";
 import logo from "./instagram-logo-white.png";
 import "./App.css";
-import { Form, Button } from "semantic-ui-react";
+import {
+  Form,
+  Button,
+  Comment,
+  Header,
+  Label,
+  Icon,
+  Menu
+} from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
+import abbreviate from "number-abbreviate";
+
+let avatars = [
+  "Ade",
+  "Christian",
+  "Daniel",
+  "Elliot",
+  "Helen",
+  "Jenny",
+  "Joe",
+  "Justen",
+  "Laura",
+  "Matt",
+  "Nan",
+  "Steve",
+  "Stevie",
+  "Tom",
+  "Veronika",
+  "Zoe"
+];
 
 class App extends Component {
   constructor(props) {
@@ -50,67 +78,211 @@ class App extends Component {
     }
   };
 
+  readFile = () => {
+    const file = document.getElementById("file-upload").files[0];
+
+    if (!file) {
+      return;
+    }
+
+    const reader = new FileReader();
+
+    reader.addEventListener(
+      "load",
+      () => {
+        this.setState({ uploadedImageB64: reader.result });
+      },
+      false
+    );
+
+    reader.readAsDataURL(file);
+  };
+
+  submit = async () => {
+    const resp = await fetch(
+      "https://eu-gb.functions.cloud.ibm.com/api/v1/web/shmueljacobs%40gmail.com_dev/default/GuessData.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          fileBase64: this.state.uploadedImageB64
+            .split(",")
+            .slice(1)
+            .join(","),
+          user: this.state.username
+        })
+      }
+    );
+
+    const respJson = await resp.json();
+
+    this.setState({ comments: respJson.comments, likes: respJson.likes });
+  };
+
   render() {
-    let img;
-    if (this.state.mainImage === logo) {
-      img = (
-        <img
-          src={this.state.mainImage}
-          alt="logo"
-          style={{
-            marginTop: "10px",
-            width: "155px",
-            height: "155px"
-          }}
-        />
+    let body;
+
+    if (
+      Array.isArray(this.state.comments) &&
+      Number.isInteger(this.state.likes)
+    ) {
+      avatars = avatars.sort(() => 0.5 - Math.random());
+
+      body = (
+        <div className="App">
+          <header className="App-header">
+            <h1>InstaFeedback</h1>
+            <img
+              src={this.state.uploadedImageB64}
+              alt="logo"
+              style={{
+                marginTop: "10px",
+                maxHeight: "600px",
+                maxWidth: "450px"
+              }}
+            />
+            <Comment.Group style={{ textAlign: "initial" }}>
+              <Header as="h3" style={{ color: "white" }}>
+                <Menu compact>
+                  <Menu.Item as="a">
+                    <Icon name="comments" /> Comments
+                    <Label color="red" floating>
+                      3
+                    </Label>
+                  </Menu.Item>
+                  <Menu.Item as="a">
+                    <Icon name="heart" /> Likes
+                    <Label color="teal" floating>
+                      {abbreviate(this.state.likes, 1)}
+                    </Label>
+                  </Menu.Item>
+                </Menu>
+              </Header>
+
+              <Comment>
+                <Comment.Avatar
+                  src={`https://react.semantic-ui.com/images/avatar/small/${avatars[0].toLowerCase()}.jpg`}
+                />
+                <Comment.Content>
+                  <Comment.Author style={{ color: "white" }} as="a">
+                    {avatars[0]}
+                  </Comment.Author>
+                  <Comment.Metadata style={{ color: "lightgrey" }}>
+                    <div>Today at 5:42PM</div>
+                  </Comment.Metadata>
+                  <Comment.Text style={{ color: "white" }}>
+                    {this.state.comments[0]}
+                  </Comment.Text>
+                </Comment.Content>
+              </Comment>
+
+              <Comment>
+                <Comment.Avatar
+                  src={`https://react.semantic-ui.com/images/avatar/small/${avatars[1].toLowerCase()}.jpg`}
+                />
+                <Comment.Content>
+                  <Comment.Author style={{ color: "white" }} as="a">
+                    {avatars[1]}
+                  </Comment.Author>
+                  <Comment.Metadata style={{ color: "lightgrey" }}>
+                    <div>Yesterday at 12:30AM</div>
+                  </Comment.Metadata>
+                  <Comment.Text style={{ color: "white" }}>
+                    {this.state.comments[1]}
+                  </Comment.Text>
+                </Comment.Content>
+              </Comment>
+
+              <Comment>
+                <Comment.Avatar
+                  src={`https://react.semantic-ui.com/images/avatar/small/${avatars[2].toLowerCase()}.jpg`}
+                />
+                <Comment.Content>
+                  <Comment.Author style={{ color: "white" }} as="a">
+                    {avatars[2]}
+                  </Comment.Author>
+                  <Comment.Metadata style={{ color: "lightgrey" }}>
+                    <div>5 days ago</div>
+                  </Comment.Metadata>
+                  <Comment.Text style={{ color: "white" }}>
+                    {this.state.comments[2]}
+                  </Comment.Text>
+                </Comment.Content>
+              </Comment>
+            </Comment.Group>
+          </header>
+        </div>
       );
     } else {
-      img = (
-        <a
-          href={`https://www.instagram.com/${this.state.username}/`}
-          target="_blank"
-        >
+      let img;
+      if (this.state.mainImage === logo) {
+        img = (
           <img
             src={this.state.mainImage}
             alt="logo"
             style={{
               marginTop: "10px",
               width: "155px",
-              height: "155px",
-              borderRadius: "50%"
+              height: "155px"
             }}
-            onLoad={() => this.setState({ isLoading: false })}
           />
-        </a>
+        );
+      } else {
+        img = (
+          <a
+            href={`https://www.instagram.com/${this.state.username}/`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={this.state.mainImage}
+              alt="logo"
+              style={{
+                marginTop: "10px",
+                width: "155px",
+                height: "155px",
+                borderRadius: "50%"
+              }}
+              onLoad={() => this.setState({ isLoading: false })}
+            />
+          </a>
+        );
+      }
+
+      body = (
+        <div className="App">
+          <header className="App-header">
+            {img}
+            <h1>InstaFeedback</h1>
+            <Form autoComplete="off">
+              <Form.Input
+                error={this.state.usernameError}
+                style={{ width: "300px" }}
+                id="input-username"
+                loading={this.state.isLoading}
+                placeholder="Username"
+                onChange={this.usernameChanged}
+              />
+              <input id="file-upload" type="file" onChange={this.readFile} />
+              <Button
+                onClick={this.submit}
+                style={{ marginTop: "10px" }}
+                disabled={
+                  !this.state.uploadedImageB64 ||
+                  !this.state.username ||
+                  this.state.usernameError
+                }
+              >
+                Submit
+              </Button>
+            </Form>
+          </header>
+        </div>
       );
     }
-
-    return (
-      <div className="App">
-        <header className="App-header">
-          {img}
-          <h1>InstaFeedback</h1>
-          <Form autoComplete="off">
-            <Form.Input
-              error={this.state.usernameError}
-              style={{ width: "300px" }}
-              id="input-username"
-              loading={this.state.isLoading}
-              placeholder="Username"
-              onChange={this.usernameChanged}
-            />
-            <input id="upload" type="file" />
-            <Button
-              style={{
-                marginTop: "10px"
-              }}
-            >
-              Submit
-            </Button>
-          </Form>
-        </header>
-      </div>
-    );
+    return body;
   }
 }
 
