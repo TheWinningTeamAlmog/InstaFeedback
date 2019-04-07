@@ -46,25 +46,46 @@ class App extends Component {
         usernameError: false
       });
     }
+  };
 
+  doneLoading = () => {
     this.setState({ isLoading: false });
   };
 
   render() {
+    let img;
+    if (this.state.mainImage === logo) {
+      img = (
+        <img
+          src={this.state.mainImage}
+          alt="logo"
+          style={{
+            marginTop: "10px",
+            width: "155px",
+            height: "155px"
+          }}
+        />
+      );
+    } else {
+      img = (
+        <img
+          src={this.state.mainImage}
+          alt="logo"
+          style={{
+            marginTop: "10px",
+            width: "155px",
+            height: "155px",
+            borderRadius: "50%"
+          }}
+          onLoad={this.doneLoading}
+        />
+      );
+    }
+
     return (
       <div className="App">
         <header className="App-header">
-          <img
-            id="main-image"
-            src={this.state.mainImage}
-            alt="logo"
-            style={{
-              marginTop: "10px",
-              width: "155px",
-              height: "155px",
-              borderRadius: this.state.mainImage === logo ? undefined : "50%"
-            }}
-          />
+          {img}
           <h1>InstaFeedback</h1>
           <Form autoComplete="off">
             <Form.Input
