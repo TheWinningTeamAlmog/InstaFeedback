@@ -37,6 +37,8 @@ class App extends Component {
       return;
     }
 
+    this.setState({ username });
+
     if (Array.isArray(imagesRegexMatch) && imagesRegexMatch.length > 0) {
       const profilePicString = imagesRegexMatch[0];
       const profilePic = profilePicString.slice(1, profilePicString.length - 1);
@@ -46,10 +48,6 @@ class App extends Component {
         usernameError: false
       });
     }
-  };
-
-  doneLoading = () => {
-    this.setState({ isLoading: false });
   };
 
   render() {
@@ -68,17 +66,22 @@ class App extends Component {
       );
     } else {
       img = (
-        <img
-          src={this.state.mainImage}
-          alt="logo"
-          style={{
-            marginTop: "10px",
-            width: "155px",
-            height: "155px",
-            borderRadius: "50%"
-          }}
-          onLoad={this.doneLoading}
-        />
+        <a
+          href={`https://www.instagram.com/${this.state.username}/`}
+          target="_blank"
+        >
+          <img
+            src={this.state.mainImage}
+            alt="logo"
+            style={{
+              marginTop: "10px",
+              width: "155px",
+              height: "155px",
+              borderRadius: "50%"
+            }}
+            onLoad={() => this.setState({ isLoading: false })}
+          />
+        </a>
       );
     }
 
