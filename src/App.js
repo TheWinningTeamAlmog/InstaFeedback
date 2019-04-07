@@ -323,7 +323,7 @@ class App extends Component {
                     !this.state.username ||
                     this.state.usernameError
                   )
-                    ? "green"
+                    ? "blue"
                     : undefined
                 }
               >
