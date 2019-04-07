@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./instagram-logo-balck-white.png";
+import logo from "./instagram-logo-white.png";
 import "./App.css";
 import { Form, Button } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
@@ -20,7 +20,11 @@ class App extends Component {
     const resp = await fetch(`https://www.instagram.com/${username}/`);
 
     if (!resp.ok || username.trim() === "") {
-      this.setState({ isLoading: false, mainImage: logo });
+      this.setState({
+        isLoading: false,
+        mainImage: logo,
+        usernameError: true
+      });
       return;
     }
 
@@ -28,8 +32,8 @@ class App extends Component {
 
     const imagesRegexMatch = pageHtml.match(/"https:\/\/.+?\.jpg\?.+?"/g);
 
-    const usernameAgain = document.getElementById("input-username").value;
-    if (username !== usernameAgain) {
+    const recheckUsername = document.getElementById("input-username").value;
+    if (username !== recheckUsername) {
       return;
     }
 
@@ -38,7 +42,8 @@ class App extends Component {
       const profilePic = profilePicString.slice(1, profilePicString.length - 1);
 
       this.setState({
-        mainImage: profilePic
+        mainImage: profilePic,
+        usernameError: false
       });
     }
 
@@ -57,21 +62,27 @@ class App extends Component {
               marginTop: "10px",
               width: "155px",
               height: "155px",
-              filter:
-                this.state.mainImage === logo ? "invert(100%)" : undefined,
               borderRadius: this.state.mainImage === logo ? undefined : "50%"
             }}
           />
           <h1>InstaFeedback</h1>
           <Form autoComplete="off">
             <Form.Input
+              error={this.state.usernameError}
               style={{ width: "300px" }}
               id="input-username"
               loading={this.state.isLoading}
               placeholder="Username"
               onChange={this.usernameChanged}
             />
-            <Button>Submit</Button>
+            <input id="upload" type="file" />
+            <Button
+              style={{
+                marginTop: "10px"
+              }}
+            >
+              Submit
+            </Button>
           </Form>
         </header>
       </div>
