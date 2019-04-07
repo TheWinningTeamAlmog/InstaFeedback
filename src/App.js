@@ -32,6 +32,19 @@ let avatars = [
   "Zoe"
 ];
 
+const title = (
+  <h1
+    style={{ cursor: "pointer" }}
+    onClick={() => {
+      window.location = "/";
+    }}
+  >
+    Insta
+    <img src={logo} style={{ width: "0.75em" }} />
+    Feedback
+  </h1>
+);
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -135,7 +148,7 @@ class App extends Component {
       body = (
         <div className="App">
           <header className="App-header">
-            <h1>InstaFeedback</h1>
+            {title}
             <img
               src={this.state.uploadedImageB64}
               alt="logo"
@@ -257,7 +270,7 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             {img}
-            <h1>InstaFeedback</h1>
+            {title}
             <Form autoComplete="off">
               <Form.Input
                 error={this.state.usernameError}
@@ -267,12 +280,25 @@ class App extends Component {
                 placeholder="Username"
                 onChange={this.usernameChanged}
               />
-              <input
-                id="file-upload"
-                accept="image/*"
-                type="file"
-                onChange={this.readFile}
-              />
+
+              <Label as="label" basic htmlFor="file-upload">
+                <Button
+                  icon="upload"
+                  label={{
+                    basic: true,
+                    content: "Photo"
+                  }}
+                  labelPosition="right"
+                />
+                <input
+                  hidden
+                  id="file-upload"
+                  accept="image/*"
+                  type="file"
+                  onChange={this.readFile}
+                />
+              </Label>
+              <br />
               <Button
                 loading={this.state.loadingAPI}
                 onClick={this.submit}
@@ -281,6 +307,15 @@ class App extends Component {
                   !this.state.uploadedImageB64 ||
                   !this.state.username ||
                   this.state.usernameError
+                }
+                color={
+                  !(
+                    !this.state.uploadedImageB64 ||
+                    !this.state.username ||
+                    this.state.usernameError
+                  )
+                    ? "green"
+                    : undefined
                 }
               >
                 Submit
