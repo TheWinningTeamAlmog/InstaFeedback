@@ -28,14 +28,14 @@ class App extends Component {
 
     const imagesRegexMatch = pageHtml.match(/"https:\/\/.+?\.jpg\?.+?"/g);
 
+    const usernameAgain = document.getElementById("input-username").value;
+    if (username !== usernameAgain) {
+      return;
+    }
+
     if (Array.isArray(imagesRegexMatch) && imagesRegexMatch.length > 0) {
       const profilePicString = imagesRegexMatch[0];
       const profilePic = profilePicString.slice(1, profilePicString.length - 1);
-
-      const usernameAgain = document.getElementById("input-username").value;
-      if (username !== usernameAgain) {
-        return;
-      }
 
       this.setState({
         mainImage: profilePic
