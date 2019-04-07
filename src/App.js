@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./instagram-logo-white.png";
+import logo from "./instagram-logo-black.png";
 import "./App.css";
 import {
   Form,
@@ -159,8 +159,28 @@ class App extends Component {
               }}
             />
             <h1>Social Projections:</h1>
+            <span style={{ marginBottom: "10px" }}>
+              <a
+                href="https://www.instagram.com/explore/tags/banana/"
+                target="_blank"
+              >
+                #banana
+              </a>{" "}
+              <a
+                href="https://www.instagram.com/explore/tags/papaya/"
+                target="_blank"
+              >
+                #papaya
+              </a>{" "}
+              <a
+                href="https://www.instagram.com/explore/tags/myple_story/"
+                target="_blank"
+              >
+                #myple_story
+              </a>{" "}
+            </span>
             <Comment.Group style={{ textAlign: "initial" }}>
-              <Header as="h3" style={{ color: "white" }}>
+              <Header as="h3">
                 <Menu compact>
                   <Menu.Item>
                     <Icon name="comments" /> Comments
@@ -182,15 +202,11 @@ class App extends Component {
                   src={`https://react.semantic-ui.com/images/avatar/small/${avatars[0].toLowerCase()}.jpg`}
                 />
                 <Comment.Content>
-                  <Comment.Author style={{ color: "white" }} as="a">
-                    {avatars[0]}
-                  </Comment.Author>
+                  <Comment.Author as="a">{avatars[0]}</Comment.Author>
                   <Comment.Metadata style={{ color: "lightgrey" }}>
                     <div>Today at 5:42PM</div>
                   </Comment.Metadata>
-                  <Comment.Text style={{ color: "white" }}>
-                    {this.state.comments[0]}
-                  </Comment.Text>
+                  <Comment.Text>{this.state.comments[0]}</Comment.Text>
                 </Comment.Content>
               </Comment>
 
@@ -199,15 +215,11 @@ class App extends Component {
                   src={`https://react.semantic-ui.com/images/avatar/small/${avatars[1].toLowerCase()}.jpg`}
                 />
                 <Comment.Content>
-                  <Comment.Author style={{ color: "white" }} as="a">
-                    {avatars[1]}
-                  </Comment.Author>
+                  <Comment.Author as="a">{avatars[1]}</Comment.Author>
                   <Comment.Metadata style={{ color: "lightgrey" }}>
                     <div>Yesterday at 12:30AM</div>
                   </Comment.Metadata>
-                  <Comment.Text style={{ color: "white" }}>
-                    {this.state.comments[1]}
-                  </Comment.Text>
+                  <Comment.Text>{this.state.comments[1]}</Comment.Text>
                 </Comment.Content>
               </Comment>
 
@@ -216,15 +228,11 @@ class App extends Component {
                   src={`https://react.semantic-ui.com/images/avatar/small/${avatars[2].toLowerCase()}.jpg`}
                 />
                 <Comment.Content>
-                  <Comment.Author style={{ color: "white" }} as="a">
-                    {avatars[2]}
-                  </Comment.Author>
+                  <Comment.Author as="a">{avatars[2]}</Comment.Author>
                   <Comment.Metadata style={{ color: "lightgrey" }}>
                     <div>5 days ago</div>
                   </Comment.Metadata>
-                  <Comment.Text style={{ color: "white" }}>
-                    {this.state.comments[2]}
-                  </Comment.Text>
+                  <Comment.Text>{this.state.comments[2]}</Comment.Text>
                 </Comment.Content>
               </Comment>
             </Comment.Group>
