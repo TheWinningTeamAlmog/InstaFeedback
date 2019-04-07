@@ -40,7 +40,7 @@ const title = (
     }}
   >
     Insta
-    <img src={logo} style={{ width: "0.75em" }} />
+    <img alt="" src={logo} style={{ width: "0.75em" }} />
     Feedback
   </h1>
 );
@@ -158,18 +158,19 @@ class App extends Component {
                 maxWidth: `${window.innerWidth - 10}px`
               }}
             />
+            <h1>Social Projections:</h1>
             <Comment.Group style={{ textAlign: "initial" }}>
               <Header as="h3" style={{ color: "white" }}>
                 <Menu compact>
                   <Menu.Item>
                     <Icon name="comments" /> Comments
-                    <Label color="red" floating>
+                    <Label color="teal" floating>
                       3
                     </Label>
                   </Menu.Item>
                   <Menu.Item>
                     <Icon name="heart" /> Likes
-                    <Label color="teal" floating>
+                    <Label color="red" floating>
                       {abbreviate(this.state.likes, 1)}
                     </Label>
                   </Menu.Item>
