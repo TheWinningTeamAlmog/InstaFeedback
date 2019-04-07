@@ -34,7 +34,7 @@ let avatars = [
 
 const title = (
   <h1
-    style={{ cursor: "pointer" }}
+    style={{ marginTop: "10px", cursor: "pointer" }}
     onClick={() => {
       window.location = "/";
     }}
@@ -161,13 +161,13 @@ class App extends Component {
             <Comment.Group style={{ textAlign: "initial" }}>
               <Header as="h3" style={{ color: "white" }}>
                 <Menu compact>
-                  <Menu.Item as="a">
+                  <Menu.Item>
                     <Icon name="comments" /> Comments
                     <Label color="red" floating>
                       3
                     </Label>
                   </Menu.Item>
-                  <Menu.Item as="a">
+                  <Menu.Item>
                     <Icon name="heart" /> Likes
                     <Label color="teal" floating>
                       {abbreviate(this.state.likes, 1)}
