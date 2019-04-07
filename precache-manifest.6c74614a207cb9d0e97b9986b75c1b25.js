@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "2b7a6b103c0bb49a47d1",
-    "url": "/InstaFeedback/static/css/main.6a73607c.chunk.css"
+    "revision": "47e1ed9143952289727e",
+    "url": "/InstaFeedback/static/css/main.14301033.chunk.css"
   },
   {
     "revision": "c9aa8af6be884ee5fc84",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "535d597dfa8699fc9669",
-    "url": "/InstaFeedback/static/js/2.a407c398.chunk.js"
+    "revision": "df44e5ec9250849dcc40",
+    "url": "/InstaFeedback/static/js/2.428d8a56.chunk.js"
   },
   {
     "revision": "9cbd1bc75bfbcef9a4b0c49ac6216874",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "cd6c777f1945164224dee082abaea03a",
-    "url": "/InstaFeedback/static/media/outline-icons.cd6c777f.woff2"
-  },
-  {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/InstaFeedback/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "cd6c777f1945164224dee082abaea03a",
+    "url": "/InstaFeedback/static/media/outline-icons.cd6c777f.woff2"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "2b7a6b103c0bb49a47d1",
-    "url": "/InstaFeedback/static/js/main.f7860cf2.chunk.js"
+    "revision": "47e1ed9143952289727e",
+    "url": "/InstaFeedback/static/js/main.a0bf662d.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/brand-icons.a046592b.woff"
   },
   {
-    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
-    "url": "/InstaFeedback/static/media/icons.8e3c7f55.eot"
-  },
-  {
     "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
     "url": "/InstaFeedback/static/media/icons.b87b9ba5.ttf"
+  },
+  {
+    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
+    "url": "/InstaFeedback/static/media/icons.8e3c7f55.eot"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
@@ -84,11 +84,11 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.962a1bf3.svg"
   },
   {
-    "revision": "535d597dfa8699fc9669",
+    "revision": "df44e5ec9250849dcc40",
     "url": "/InstaFeedback/static/css/2.8919fe2b.chunk.css"
   },
   {
-    "revision": "47afeb72ec7d975ed318a9e289a8d9e6",
+    "revision": "d34ca802f1fb3b4a7f2eb3dd961d642c",
     "url": "/InstaFeedback/index.html"
   }
 ];
