@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "d199f9b908b55f9653d9",
+    "revision": "e1199cab594a04864c8b",
     "url": "/InstaFeedback/static/css/main.14301033.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "df44e5ec9250849dcc40",
-    "url": "/InstaFeedback/static/js/2.428d8a56.chunk.js"
+    "revision": "c7685e82496388bcaeae",
+    "url": "/InstaFeedback/static/js/2.6fcbfb5b.chunk.js"
   },
   {
     "revision": "9cbd1bc75bfbcef9a4b0c49ac6216874",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
-    "url": "/InstaFeedback/static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
     "revision": "cd6c777f1945164224dee082abaea03a",
     "url": "/InstaFeedback/static/media/outline-icons.cd6c777f.woff2"
+  },
+  {
+    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
+    "url": "/InstaFeedback/static/media/outline-icons.ef60a4f6.woff"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "d199f9b908b55f9653d9",
-    "url": "/InstaFeedback/static/js/main.1fbc6d4b.chunk.js"
+    "revision": "e1199cab594a04864c8b",
+    "url": "/InstaFeedback/static/js/main.4c523514.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -84,11 +84,11 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.962a1bf3.svg"
   },
   {
-    "revision": "df44e5ec9250849dcc40",
+    "revision": "c7685e82496388bcaeae",
     "url": "/InstaFeedback/static/css/2.8919fe2b.chunk.css"
   },
   {
-    "revision": "3fbcc4a7c97348d7733e82e8f7e119e2",
+    "revision": "d1ffd7feff0311369fd4a5e1df507c0e",
     "url": "/InstaFeedback/index.html"
   }
 ];
