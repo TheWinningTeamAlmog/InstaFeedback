@@ -36,7 +36,7 @@ const title = (
   <h1
     style={{ marginTop: "10px", cursor: "pointer" }}
     onClick={() => {
-      window.location = "/";
+      window.location = window.location;
     }}
   >
     Insta
