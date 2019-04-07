@@ -99,6 +99,8 @@ class App extends Component {
   };
 
   submit = async () => {
+    this.setState({ loadingAPI: true });
+
     const resp = await fetch(
       "https://eu-gb.functions.cloud.ibm.com/api/v1/web/shmueljacobs%40gmail.com_dev/default/GuessData.json",
       {
@@ -267,6 +269,7 @@ class App extends Component {
               />
               <input id="file-upload" type="file" onChange={this.readFile} />
               <Button
+                loading={this.state.loadingAPI}
                 onClick={this.submit}
                 style={{ marginTop: "10px" }}
                 disabled={
