@@ -267,7 +267,12 @@ class App extends Component {
                 placeholder="Username"
                 onChange={this.usernameChanged}
               />
-              <input id="file-upload" type="file" onChange={this.readFile} />
+              <input
+                id="file-upload"
+                accept="image/*"
+                type="file"
+                onChange={this.readFile}
+              />
               <Button
                 loading={this.state.loadingAPI}
                 onClick={this.submit}
