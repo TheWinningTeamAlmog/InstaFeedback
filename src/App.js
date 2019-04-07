@@ -142,7 +142,7 @@ class App extends Component {
               style={{
                 marginTop: "10px",
                 maxHeight: "600px",
-                maxWidth: "400px"
+                maxWidth: `${window.innerWidth - 10}px`
               }}
             />
             <Comment.Group style={{ textAlign: "initial" }}>
