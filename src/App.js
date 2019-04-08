@@ -168,6 +168,26 @@ class App extends Component {
           );
         });
 
+      const comments = this.state.comments
+        .slice(0, Math.min(3, this.state.comments.length))
+        .map((c, i) => {
+          return (
+            <Comment key={i}>
+              <Comment.Avatar src={avatars[i][1]} />
+              <Comment.Content>
+                <Comment.Author as="a">{avatars[i][0]}</Comment.Author>
+                <Comment.Metadata>
+                  <div>
+                    Today at {Math.floor(Math.random() * 11) + 1}:
+                    {Math.floor(Math.random() * 5) + 1}2PM
+                  </div>
+                </Comment.Metadata>
+                <Comment.Text>{c}</Comment.Text>
+              </Comment.Content>
+            </Comment>
+          );
+        });
+
       body = (
         <div className="App">
           <header
@@ -194,7 +214,7 @@ class App extends Component {
                   <Menu.Item>
                     <Icon name="comments" /> Comments
                     <Label color="teal" floating>
-                      3
+                      {this.state.comments.length}
                     </Label>
                   </Menu.Item>
                   <Menu.Item>
@@ -206,45 +226,7 @@ class App extends Component {
                 </Menu>
               </Header>
 
-              <Comment>
-                <Comment.Avatar src={avatars[0][1]} />
-                <Comment.Content>
-                  <Comment.Author as="a">{avatars[0][0]}</Comment.Author>
-                  <Comment.Metadata>
-                    <div>
-                      Today at {Math.floor(Math.random() * 11) + 1}:
-                      {Math.floor(Math.random() * 5) + 1}2PM
-                    </div>
-                  </Comment.Metadata>
-                  <Comment.Text>{this.state.comments[0]}</Comment.Text>
-                </Comment.Content>
-              </Comment>
-
-              <Comment>
-                <Comment.Avatar src={avatars[1][1]} />
-                <Comment.Content>
-                  <Comment.Author as="a">{avatars[1][0]}</Comment.Author>
-                  <Comment.Metadata>
-                    <div>
-                      Yesterday at {Math.floor(Math.random() * 11) + 1}:
-                      {Math.floor(Math.random() * 60) + 1}AM
-                    </div>
-                  </Comment.Metadata>
-                  <Comment.Text>{this.state.comments[1]}</Comment.Text>
-                </Comment.Content>
-              </Comment>
-
-              <Comment>
-                <Comment.Avatar src={avatars[2][1]} />
-
-                <Comment.Content>
-                  <Comment.Author as="a">{avatars[2][0]}</Comment.Author>
-                  <Comment.Metadata>
-                    <div>{Math.floor(Math.random() * 7) + 2} days ago</div>
-                  </Comment.Metadata>
-                  <Comment.Text>{this.state.comments[2]}</Comment.Text>
-                </Comment.Content>
-              </Comment>
+              {comments}
             </Comment.Group>
           </header>
         </div>
