@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "b50c49c484a7c9d495e8",
+    "revision": "f9d8c524ef64f5456bb1",
     "url": "/InstaFeedback/static/css/main.36122414.chunk.css"
   },
   {
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "cd6c777f1945164224dee082abaea03a",
-    "url": "/InstaFeedback/static/media/outline-icons.cd6c777f.woff2"
-  },
-  {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/InstaFeedback/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "cd6c777f1945164224dee082abaea03a",
+    "url": "/InstaFeedback/static/media/outline-icons.cd6c777f.woff2"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "b50c49c484a7c9d495e8",
-    "url": "/InstaFeedback/static/js/main.6a1959c3.chunk.js"
+    "revision": "f9d8c524ef64f5456bb1",
+    "url": "/InstaFeedback/static/js/main.8e7ba679.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -68,16 +68,16 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.8e3c7f55.eot"
   },
   {
-    "revision": "13db00b7a34fee4d819ab7f9838cc428",
-    "url": "/InstaFeedback/static/media/brand-icons.13db00b7.eot"
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/InstaFeedback/static/media/icons.b87b9ba5.ttf"
   },
   {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
     "url": "/InstaFeedback/static/media/brand-icons.c5ebe0b3.ttf"
   },
   {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/InstaFeedback/static/media/icons.b87b9ba5.ttf"
+    "revision": "13db00b7a34fee4d819ab7f9838cc428",
+    "url": "/InstaFeedback/static/media/brand-icons.13db00b7.eot"
   },
   {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/css/2.8919fe2b.chunk.css"
   },
   {
-    "revision": "b5003f11d823d3aafe0239b0dacdeb76",
+    "revision": "75ef897b07815c2d0e65bbea4c4d1463",
     "url": "/InstaFeedback/index.html"
   }
 ];
