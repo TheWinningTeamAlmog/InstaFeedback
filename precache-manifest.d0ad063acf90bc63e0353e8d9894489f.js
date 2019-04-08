@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "5eaa316f3a4f3e8e052d",
+    "revision": "fe2146cb8dc377ca88df",
     "url": "/InstaFeedback/static/css/main.36122414.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "8c6ca90fde67efe63da5",
-    "url": "/InstaFeedback/static/js/2.7ee3b4bb.chunk.js"
+    "revision": "510330b2ecd1ca239ada",
+    "url": "/InstaFeedback/static/js/2.5c3b05a8.chunk.js"
   },
   {
     "revision": "7ea7582bd2388c26370ea9a9ef65749c",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "5eaa316f3a4f3e8e052d",
-    "url": "/InstaFeedback/static/js/main.d5e3db64.chunk.js"
+    "revision": "fe2146cb8dc377ca88df",
+    "url": "/InstaFeedback/static/js/main.c10b53a1.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -88,11 +88,11 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.962a1bf3.svg"
   },
   {
-    "revision": "8c6ca90fde67efe63da5",
+    "revision": "510330b2ecd1ca239ada",
     "url": "/InstaFeedback/static/css/2.8919fe2b.chunk.css"
   },
   {
-    "revision": "adcb4d7cd0807da62adf94689bc76ebf",
+    "revision": "c5a9428108b3c1e56978849b99d155da",
     "url": "/InstaFeedback/index.html"
   }
 ];
