@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "204266c8a61762a28944",
-    "url": "/InstaFeedback/static/css/main.6a3f3ddb.chunk.css"
+    "revision": "96a2fc636ad9044a3a99",
+    "url": "/InstaFeedback/static/css/main.36122414.chunk.css"
   },
   {
     "revision": "c9aa8af6be884ee5fc84",
@@ -16,24 +16,28 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "c7685e82496388bcaeae",
-    "url": "/InstaFeedback/static/js/2.6fcbfb5b.chunk.js"
+    "revision": "d356715adc80d0a944c9",
+    "url": "/InstaFeedback/static/js/2.46f5c5cc.chunk.js"
   },
   {
     "revision": "7ea7582bd2388c26370ea9a9ef65749c",
     "url": "/InstaFeedback/static/media/instagram-logo-black.7ea7582b.png"
   },
   {
+    "revision": "52adbadf1c52dff73d857542e98317cd",
+    "url": "/InstaFeedback/static/media/alon.52adbadf.jpg"
+  },
+  {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/InstaFeedback/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "cd6c777f1945164224dee082abaea03a",
-    "url": "/InstaFeedback/static/media/outline-icons.cd6c777f.woff2"
-  },
-  {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/InstaFeedback/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "cd6c777f1945164224dee082abaea03a",
+    "url": "/InstaFeedback/static/media/outline-icons.cd6c777f.woff2"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -44,8 +48,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "204266c8a61762a28944",
-    "url": "/InstaFeedback/static/js/main.83ae8ec0.chunk.js"
+    "revision": "96a2fc636ad9044a3a99",
+    "url": "/InstaFeedback/static/js/main.7905f18a.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -84,11 +88,11 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.962a1bf3.svg"
   },
   {
-    "revision": "c7685e82496388bcaeae",
+    "revision": "d356715adc80d0a944c9",
     "url": "/InstaFeedback/static/css/2.8919fe2b.chunk.css"
   },
   {
-    "revision": "6452c93d8e6fe52f53bfcce8a65c9805",
+    "revision": "c912d800b59e1bada61efa88c8233db6",
     "url": "/InstaFeedback/index.html"
   }
 ];
