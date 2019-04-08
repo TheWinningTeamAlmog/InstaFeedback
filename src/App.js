@@ -18,7 +18,6 @@ import {
 } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 import abbreviate from "number-abbreviate";
-import ExifOrientationImg from "react-exif-orientation-img";
 
 let avatars = [
   ["Alon", alon],
@@ -171,9 +170,12 @@ class App extends Component {
 
       body = (
         <div className="App">
-          <header className="App-header">
+          <header
+            className="App-header"
+            style={{ overflow: "-webkit-paged-y" }}
+          >
             {title}
-            <ExifOrientationImg
+            <img
               src={this.state.uploadedImageB64}
               alt=""
               style={{
