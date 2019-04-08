@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "56212f13ba059c10af18",
+    "revision": "b50c49c484a7c9d495e8",
     "url": "/InstaFeedback/static/css/main.36122414.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "d356715adc80d0a944c9",
-    "url": "/InstaFeedback/static/js/2.46f5c5cc.chunk.js"
+    "revision": "8c6ca90fde67efe63da5",
+    "url": "/InstaFeedback/static/js/2.7ee3b4bb.chunk.js"
   },
   {
     "revision": "7ea7582bd2388c26370ea9a9ef65749c",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "56212f13ba059c10af18",
-    "url": "/InstaFeedback/static/js/main.b47397c4.chunk.js"
+    "revision": "b50c49c484a7c9d495e8",
+    "url": "/InstaFeedback/static/js/main.6a1959c3.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -68,16 +68,16 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.8e3c7f55.eot"
   },
   {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/InstaFeedback/static/media/icons.b87b9ba5.ttf"
-  },
-  {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
     "url": "/InstaFeedback/static/media/brand-icons.13db00b7.eot"
   },
   {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
     "url": "/InstaFeedback/static/media/brand-icons.c5ebe0b3.ttf"
+  },
+  {
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/InstaFeedback/static/media/icons.b87b9ba5.ttf"
   },
   {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
@@ -88,11 +88,11 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.962a1bf3.svg"
   },
   {
-    "revision": "d356715adc80d0a944c9",
+    "revision": "8c6ca90fde67efe63da5",
     "url": "/InstaFeedback/static/css/2.8919fe2b.chunk.css"
   },
   {
-    "revision": "2b937bd93c0cf2ea9b1cfe8b02b3fe2b",
+    "revision": "b5003f11d823d3aafe0239b0dacdeb76",
     "url": "/InstaFeedback/index.html"
   }
 ];
