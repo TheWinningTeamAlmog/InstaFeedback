@@ -137,7 +137,7 @@ class App extends Component {
     this.setState({
       comments: respJson.comments,
       likes: respJson.likes,
-      tags: respJson.tags
+      tags: respJson.tags.filter(t => t)
     });
   };
 
@@ -150,23 +150,23 @@ class App extends Component {
     ) {
       avatars = avatars.sort(() => 0.5 - Math.random());
 
-      const tags = this.state.tags
-        .slice(0, 2)
-        .concat("maple story")
-        .map((t, i) => {
-          t = t.replace(/ /g, "_");
-          return (
-            <a
-              key={i}
-              href={`https://www.instagram.com/explore/tags/${t}/`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              #{t}{" "}
-            </a>
-          );
-        });
+      if (this.state.tags.length == 0) {
+        this.state.tags = ["maple_story"];
+      }
+      const tags = this.state.tags.slice(0, 2).map((t, i) => {
+        t = t.replace(/ /g, "_");
+        return (
+          <a
+            key={i}
+            href={`https://www.instagram.com/explore/tags/${t}/`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            #{t}{" "}
+          </a>
+        );
+      });
 
       const comments = this.state.comments
         .slice(0, Math.min(3, this.state.comments.length))
@@ -191,10 +191,7 @@ class App extends Component {
 
       body = (
         <div className="App">
-          <header
-            className="App-header"
-            style={{ overflow: "-webkit-paged-y" }}
-          >
+          <header className="App-header">
             {title}
             <img
               src={this.state.uploadedImageB64}
@@ -210,22 +207,24 @@ class App extends Component {
             <Comment.Group
               style={{ textAlign: "initial", fontSize: "x-large" }}
             >
-              <Header as="h3">
-                <Menu compact>
-                  <Menu.Item>
-                    <Icon name="comments" /> Comments
-                    <Label color="teal" floating>
-                      {this.state.comments.length}
-                    </Label>
-                  </Menu.Item>
-                  <Menu.Item>
-                    <Icon name="heart" /> Likes
-                    <Label color="red" floating>
-                      {abbreviate(this.state.likes, 1)}
-                    </Label>
-                  </Menu.Item>
-                </Menu>
-              </Header>
+              <center>
+                <Header as="h3">
+                  <Menu compact>
+                    <Menu.Item>
+                      <Icon name="comments" /> Comments
+                      <Label color="teal" floating>
+                        3
+                      </Label>
+                    </Menu.Item>
+                    <Menu.Item>
+                      <Icon name="heart" /> Likes
+                      <Label color="red" floating>
+                        {abbreviate(this.state.likes, 1)}
+                      </Label>
+                    </Menu.Item>
+                  </Menu>
+                </Header>
+              </center>
 
               {comments}
             </Comment.Group>
