@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "96a2fc636ad9044a3a99",
+    "revision": "3641547bebe507d0c40b",
     "url": "/InstaFeedback/static/css/main.36122414.chunk.css"
   },
   {
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "96a2fc636ad9044a3a99",
-    "url": "/InstaFeedback/static/js/main.7905f18a.chunk.js"
+    "revision": "3641547bebe507d0c40b",
+    "url": "/InstaFeedback/static/js/main.8d80ca86.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/css/2.8919fe2b.chunk.css"
   },
   {
-    "revision": "c912d800b59e1bada61efa88c8233db6",
+    "revision": "3ead77601da92e869546d837458e9719",
     "url": "/InstaFeedback/index.html"
   }
 ];
