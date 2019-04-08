@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "f9d8c524ef64f5456bb1",
+    "revision": "5eaa316f3a4f3e8e052d",
     "url": "/InstaFeedback/static/css/main.36122414.chunk.css"
   },
   {
@@ -24,20 +24,20 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/instagram-logo-black.7ea7582b.png"
   },
   {
-    "revision": "52adbadf1c52dff73d857542e98317cd",
-    "url": "/InstaFeedback/static/media/alon.52adbadf.jpg"
+    "revision": "45a96ea26cc4312567cf4dd379666c9c",
+    "url": "/InstaFeedback/static/media/alon.45a96ea2.jpg"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/InstaFeedback/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
-    "url": "/InstaFeedback/static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
     "revision": "cd6c777f1945164224dee082abaea03a",
     "url": "/InstaFeedback/static/media/outline-icons.cd6c777f.woff2"
+  },
+  {
+    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
+    "url": "/InstaFeedback/static/media/outline-icons.ef60a4f6.woff"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "f9d8c524ef64f5456bb1",
-    "url": "/InstaFeedback/static/js/main.8e7ba679.chunk.js"
+    "revision": "5eaa316f3a4f3e8e052d",
+    "url": "/InstaFeedback/static/js/main.d5e3db64.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -72,12 +72,12 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/media/icons.b87b9ba5.ttf"
   },
   {
-    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
-    "url": "/InstaFeedback/static/media/brand-icons.c5ebe0b3.ttf"
-  },
-  {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
     "url": "/InstaFeedback/static/media/brand-icons.13db00b7.eot"
+  },
+  {
+    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
+    "url": "/InstaFeedback/static/media/brand-icons.c5ebe0b3.ttf"
   },
   {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/InstaFeedback/static/css/2.8919fe2b.chunk.css"
   },
   {
-    "revision": "75ef897b07815c2d0e65bbea4c4d1463",
+    "revision": "adcb4d7cd0807da62adf94689bc76ebf",
     "url": "/InstaFeedback/index.html"
   }
 ];
