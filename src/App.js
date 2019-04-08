@@ -179,7 +179,8 @@ class App extends Component {
                 <Comment.Metadata>
                   <div>
                     Today at {Math.floor(Math.random() * 11) + 1}:
-                    {Math.floor(Math.random() * 5) + 1}2PM
+                    {Math.floor(Math.random() * 5) + 1}
+                    {Math.floor(Math.random() * 10)}PM
                   </div>
                 </Comment.Metadata>
                 <Comment.Text>{c}</Comment.Text>
