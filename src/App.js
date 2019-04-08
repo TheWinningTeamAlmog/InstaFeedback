@@ -180,7 +180,7 @@ class App extends Component {
                 maxWidth: `${window.innerWidth - 10}px`
               }}
             />
-            <h1>Social Projections:</h1>
+            <h2>Social Projections:</h2>
             <span style={{ marginBottom: "10px" }}>{tags}</span>
             <Comment.Group
               style={{ textAlign: "initial", fontSize: "x-large" }}
