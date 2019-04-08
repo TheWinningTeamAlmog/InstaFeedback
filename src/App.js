@@ -3,6 +3,7 @@ import logo from "./instagram-logo-black.png";
 import alon from "./alon.jpg";
 import sagi from "./sagi.jpg";
 import kobi from "./kobi.jpg";
+import adam from "./adam.jpg";
 import yehuda from "./yehuda.jpg";
 import "./App.css";
 import {
@@ -19,6 +20,7 @@ import abbreviate from "number-abbreviate";
 
 let avatars = [
   ["Alon", alon],
+  ["Adam", adam],
   ["Yehuda", yehuda],
   ["Sagi", sagi],
   ["Kobi", kobi]
