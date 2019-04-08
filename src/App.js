@@ -154,10 +154,11 @@ class App extends Component {
       const tags = this.state.tags
         .slice(0, 2)
         .concat("maple story")
-        .map(t => {
+        .map((t, i) => {
           t = t.replace(/ /g, "_");
           return (
             <a
+              key={i}
               href={`https://www.instagram.com/explore/tags/${t}/`}
               target="_blank"
               rel="noopener noreferrer"
