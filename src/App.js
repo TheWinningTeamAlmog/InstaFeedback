@@ -4,6 +4,7 @@ import alon from "./alon.jpg";
 import sagi from "./sagi.jpg";
 import kobi from "./kobi.jpg";
 import adam from "./adam.jpg";
+import elisha from "./elisha.jpg";
 import yehuda from "./yehuda.jpg";
 import "./App.css";
 import {
@@ -23,7 +24,8 @@ let avatars = [
   ["Adam", adam],
   ["Yehuda", yehuda],
   ["Sagi", sagi],
-  ["Kobi", kobi]
+  ["Kobi", kobi],
+  ["Elisha", elisha]
 ];
 
 const title = (
