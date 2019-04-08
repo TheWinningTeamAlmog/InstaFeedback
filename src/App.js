@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import logo from "./instagram-logo-black.png";
+import alon from "./alon.jpg";
+import sagi from "./sagi.jpg";
+import kobi from "./kobi.jpg";
+import yehuda from "./yehuda.jpg";
 import "./App.css";
 import {
   Form,
@@ -14,22 +18,10 @@ import "semantic-ui-css/semantic.min.css";
 import abbreviate from "number-abbreviate";
 
 let avatars = [
-  "Ade",
-  "Christian",
-  "Daniel",
-  "Elliot",
-  "Helen",
-  "Jenny",
-  "Joe",
-  "Justen",
-  "Laura",
-  "Matt",
-  "Nan",
-  "Steve",
-  "Stevie",
-  "Tom",
-  "Veronika",
-  "Zoe"
+  ["Alon", alon],
+  ["Yehuda", yehuda],
+  ["Sagi", sagi],
+  ["Kobi", kobi]
 ];
 
 const title = (
@@ -205,12 +197,10 @@ class App extends Component {
               </Header>
 
               <Comment>
-                <Comment.Avatar
-                  src={`https://react.semantic-ui.com/images/avatar/small/${avatars[0].toLowerCase()}.jpg`}
-                />
+                <Comment.Avatar src={avatars[0][1]} />
                 <Comment.Content>
-                  <Comment.Author as="a">{avatars[0]}</Comment.Author>
-                  <Comment.Metadata style={{ color: "lightgrey" }}>
+                  <Comment.Author as="a">{avatars[0][0]}</Comment.Author>
+                  <Comment.Metadata>
                     <div>Today at 5:42PM</div>
                   </Comment.Metadata>
                   <Comment.Text>{this.state.comments[0]}</Comment.Text>
@@ -218,12 +208,10 @@ class App extends Component {
               </Comment>
 
               <Comment>
-                <Comment.Avatar
-                  src={`https://react.semantic-ui.com/images/avatar/small/${avatars[1].toLowerCase()}.jpg`}
-                />
+                <Comment.Avatar src={avatars[1][1]} />
                 <Comment.Content>
-                  <Comment.Author as="a">{avatars[1]}</Comment.Author>
-                  <Comment.Metadata style={{ color: "lightgrey" }}>
+                  <Comment.Author as="a">{avatars[1][0]}</Comment.Author>
+                  <Comment.Metadata>
                     <div>Yesterday at 12:30AM</div>
                   </Comment.Metadata>
                   <Comment.Text>{this.state.comments[1]}</Comment.Text>
@@ -231,12 +219,11 @@ class App extends Component {
               </Comment>
 
               <Comment>
-                <Comment.Avatar
-                  src={`https://react.semantic-ui.com/images/avatar/small/${avatars[2].toLowerCase()}.jpg`}
-                />
+                <Comment.Avatar src={avatars[2][1]} />
+
                 <Comment.Content>
-                  <Comment.Author as="a">{avatars[2]}</Comment.Author>
-                  <Comment.Metadata style={{ color: "lightgrey" }}>
+                  <Comment.Author as="a">{avatars[2][0]}</Comment.Author>
+                  <Comment.Metadata>
                     <div>5 days ago</div>
                   </Comment.Metadata>
                   <Comment.Text>{this.state.comments[2]}</Comment.Text>
