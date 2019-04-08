@@ -131,9 +131,18 @@ class App extends Component {
       }
     );
 
+    if (!resp.ok) {
+      this.setState({ loadingAPI: false });
+      return;
+    }
+
     const respJson = await resp.json();
 
-    this.setState({ comments: respJson.comments, likes: respJson.likes });
+    this.setState({
+      comments: respJson.comments,
+      likes: respJson.likes,
+      tags: respJson.tags
+    });
   };
 
   render() {
@@ -144,6 +153,23 @@ class App extends Component {
       Number.isInteger(this.state.likes)
     ) {
       avatars = avatars.sort(() => 0.5 - Math.random());
+
+      const tags = this.state.tags
+        .slice(0, 2)
+        .concat("maple story")
+        .map(t => {
+          t = t.replace(/ /g, "_");
+          return (
+            <a
+              href={`https://www.instagram.com/explore/tags/${t}/`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              #{t}{" "}
+            </a>
+          );
+        });
 
       body = (
         <div className="App">
@@ -159,26 +185,7 @@ class App extends Component {
               }}
             />
             <h1>Social Projections:</h1>
-            <span style={{ marginBottom: "10px" }}>
-              <a
-                href="https://www.instagram.com/explore/tags/banana/"
-                target="_blank"
-              >
-                #banana
-              </a>{" "}
-              <a
-                href="https://www.instagram.com/explore/tags/papaya/"
-                target="_blank"
-              >
-                #papaya
-              </a>{" "}
-              <a
-                href="https://www.instagram.com/explore/tags/myple_story/"
-                target="_blank"
-              >
-                #myple_story
-              </a>{" "}
-            </span>
+            <span style={{ marginBottom: "10px" }}>{tags}</span>
             <Comment.Group style={{ textAlign: "initial" }}>
               <Header as="h3">
                 <Menu compact>
@@ -317,15 +324,7 @@ class App extends Component {
                   !this.state.username ||
                   this.state.usernameError
                 }
-                color={
-                  !(
-                    !this.state.uploadedImageB64 ||
-                    !this.state.username ||
-                    this.state.usernameError
-                  )
-                    ? "blue"
-                    : undefined
-                }
+                color="blue"
               >
                 Submit
               </Button>
