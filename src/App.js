@@ -178,7 +178,9 @@ class App extends Component {
             />
             <h1>Social Projections:</h1>
             <span style={{ marginBottom: "10px" }}>{tags}</span>
-            <Comment.Group style={{ textAlign: "initial" }}>
+            <Comment.Group
+              style={{ textAlign: "initial", fontSize: "x-large" }}
+            >
               <Header as="h3">
                 <Menu compact>
                   <Menu.Item>
